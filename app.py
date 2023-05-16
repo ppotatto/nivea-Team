@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 client = MongoClient('mongodb+srv://sparta:test@sparta.mw5zmbb.mongodb.net/?retryWrites=true&w=majority')
 
-db = client.dbsprata
+db = client.dbsprta
 
 @app.route('/')
 def home():
