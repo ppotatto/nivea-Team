@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 client = MongoClient('mongodb+srv://sparta:test@sparta.mw5zmbb.mongodb.net/?retryWrites=true&w=majority')
 
-db = client.dbsprta
+db = client.dbsparta
 
 @app.route('/')
 def home():
@@ -36,7 +36,7 @@ def guestbook_post():
 
 @app.route('/guestbook', methods=['GET'])
 def guestbook_get():
-    all_fan = list(db.fanm.find({}, {'_id':False}))
+    all_fan =list(db.fanm.find({}, {'_id':False}))
     return jsonify({'result': all_fan})
 
 
