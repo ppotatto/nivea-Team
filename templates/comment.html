@@ -27,7 +27,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/comment.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='/css/comment.css') }}"
+    />
   </head>
   <body>
     <div class="mypic">
@@ -64,7 +67,7 @@
           id="comment"
           style="height: 100px"
         ></textarea>
-        <label for="floatingTextarea2">응원의 한마디!👀🔥</label>
+        <label for="floatingTextarea2">!응원의 한마디!👀🔥</label>
       </div>
       <div class="button_box">
         <button
@@ -122,8 +125,10 @@
       </div>
     </div>
 
-
     <!-- script part -->
-    <script src="{{ url_for('static', filename='/js/comment.js') }}" defer></script>
+    <script
+      src="{{ url_for('static', filename='/js/comment.js') }}"
+      defer
+    ></script>
   </body>
 </html>
